@@ -79,6 +79,8 @@ jobs:
           PREFIX: ${{ github.event.repository_name }}
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
+        env:
+          PREFIX: ${{ github.event.repository_name }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
