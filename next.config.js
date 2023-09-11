@@ -3,7 +3,7 @@ const prefix = process.env.PREFIX ? `/${process.env.PREFIX}` : '/'
 
 const nextConfig = {
   assetPrefix: prefix,
-  basePrefix: prefix,
+  basePath: prefix,
   output: 'export',
   trailingSlash: true,
 }
