@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
-const prefix = process.env.PREFIX ? `/${process.env.PREFIX}` : '/'
-
 const nextConfig = {
-  assetPrefix: prefix,
-  basePath: prefix,
+  assetPrefix: process.env.PREFIX ? `/${process.env.PREFIX}` : '/',
+  basePath: process.env.PREFIX ? `/${process.env.PREFIX}` : '',
   output: 'export',
   trailingSlash: true,
 }
