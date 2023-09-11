@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const prefix = process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}` : '/'
+const prefix = process.env.PREFIX ? `/${process.env.PREFIX}` : '/'
 
 const nextConfig = {
   assetPrefix: prefix,
